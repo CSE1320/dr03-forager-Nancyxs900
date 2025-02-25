@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaSearch, FaFilter } from 'react-icons/fa';
 
-export default function SearchBar() {
+export default function Search() {
   const containerStyle = {
     display: 'flex',
     width: '337.336px',
