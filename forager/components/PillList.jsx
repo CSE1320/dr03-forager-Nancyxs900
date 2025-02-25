@@ -1,5 +1,5 @@
 import React from "react";
-import RoundedRectangle from "./RoundedRectangle";
+import RoundedRectangle from "./pill"; 
 
 export default function PillList() {
   return (
