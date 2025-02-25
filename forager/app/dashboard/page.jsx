@@ -1,12 +1,30 @@
-import NavBar from '../../components/NavBar'; // Adjust the path as necessary
-import Search from '../../components/Search'; // Adjust the path as necessary
+import React from "react";
+import NavBar from "../../components/NavBar";
+import Search from "../../components/Search";
+import PillList from "../../components/PillList";
+import MushroomList from "../../components/MushroomList";
 
 export default function DashboardPage() {
   return (
-    <div className="page">
-      <h1>Dashboard Page</h1>
-      <Search />
-      <NavBar />
+    <div className="dashboard-container">
+      {/* Background Icons */}
+      <img src="/icons/mush2.png" alt="Mushroom" className="background-mushroom" />
+      <img src="/icons/overlay-icon.png" alt="Overlay Icon" className="overlay-icon" />
+
+      {/* Status Bar */}
+      <img src="/icons/status_bar.png" alt="Status Bar" className="status-bar" />
+
+      {/* Gray Content Box */}
+      <div className="content-box">
+        <Search />
+        <PillList />
+        <MushroomList />
+      </div>
+
+      {/* Bottom Nav */}
+      <div className="bottom-nav">
+        <NavBar />
+      </div>
     </div>
   );
 }

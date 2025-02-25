@@ -1,0 +1,93 @@
+.dashboard-container {
+    background-color: green;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Background Mushroom Icon */
+  .background-mushroom {
+    width: 283.871px;
+    height: 282.835px;
+    position: absolute;
+    right: 154.8px;
+    bottom: 607.5px;
+    transform: rotate(-18.364deg);
+    opacity: 0.24;
+  }
+  
+  /* Overlay Icon */
+  .overlay-icon {
+    width: 355.734px;
+    height: 78.938px;
+    position: absolute;
+    top: 60.49px;
+    left: 29.73px;
+  }
+  
+/* Status Bar */
+.status-bar {
+    position: absolute;
+    width: 394.641px;
+    height: 45.108px;
+    flex-shrink: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Gray Content Box */
+.content-box {
+    width: 414px;
+    height: 730.947px;
+    flex-shrink: 0;
+    border-radius: 42.032px 42.032px 0px 0px;
+    background: #F2F2F2;
+    position: relative;
+    padding: 0;
+  }
+  
+  /* Search Bar */
+  .search-container {
+    position: absolute;
+    top: 77px;
+    left: 29.73px;
+    right: 22.55px;
+    width: calc(100% - 52.28px);
+  }
+  
+  /* Pill List */
+  .pill-list-container {
+    position: absolute;
+    top: 220px;
+    left: 29.73px;
+    right: 29.73px;
+    width: calc(100% - 59.46px);
+  }
+  
+  /* Mushroom List */
+  .mushroom-list-container {
+    position: absolute;
+    top: 279px;
+    left: 29.73px;
+    right: 29.73px;
+    width: calc(100% - 59.46px);
+  }
+  
+  /* Bottom Navbar */
+  .bottom-nav {
+    width: 414px;
+    height: 86.114px;
+    flex-shrink: 0;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+  }
+  
