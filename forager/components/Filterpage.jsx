@@ -2,7 +2,7 @@ import React from "react";
 import RoundedRectangle from "./pill";
 import { filterData } from "../data/development"; // Ensure this path is correct
 
-export default function PillList() {
+export default function Filterpage() {
   return (
     <div className="flex flex-col items-center gap-[10px]">
       {filterData.map((section, index) => (
