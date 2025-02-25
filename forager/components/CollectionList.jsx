@@ -1,7 +1,7 @@
 import React from "react";
 import RoundedRectangle from "./pill"; 
 
-export default function PillList() {
+export default function CollectionList() {
   return (
     <div className="flex flex-col items-center">
       {/* Title Text */}

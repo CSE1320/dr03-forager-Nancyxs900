@@ -1,8 +1,9 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
 import Search from "../../components/Search";
-import PillList from "../../components/PillList";
+import PillList from "../../components/CollectionList";
 import MushroomList1 from "../../components/MushroomList1";
+import CollectionList from "../../components/CollectionList";
 
 export default function DashboardPage() {
   return (
@@ -17,7 +18,7 @@ export default function DashboardPage() {
       {/* Gray Content Box */}
       <div className="content-box">
         <Search />
-        <PillList />
+        <CollectionList />
         <MushroomList1 />
       </div>
 
