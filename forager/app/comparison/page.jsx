@@ -1,5 +1,5 @@
 import NavBar from '../../components/NavBar';
-import Search from "../../components/Filterpage";
+import Filterpage from "../../components/Filterpage";
 
 export default function MushroomComparisonPage() {
   return (
