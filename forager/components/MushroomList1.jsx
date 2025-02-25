@@ -11,30 +11,18 @@ const mushrooms = [
 export default function MushroomList1() {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-200">
-      <ul className="flex flex-wrap gap-x-5 gap-y-9 justify-between max-w-[364px] h-[380px] list-none p-0">
+      <ul className="grid grid-cols-3 gap-x-5 gap-y-6 w-[350px] list-none p-0">
         {mushrooms.map((mushroom, index) => (
-          <li
-            key={index}
-            className="relative w-[103px] h-[165px] flex-shrink-0 text-[#203B5F] text-center font-nunito text-[16.4px] font-semibold"
-          >
+          <li key={index} className="relative w-[103px] h-[165px] flex-shrink-0 text-[#203B5F] text-center font-nunito text-[16.4px] font-semibold">
             <div className="bg-white p-2 w-[103px] h-[165px] inline-block shadow-md relative">
-              {/* Mushroom Image */}
-              <img
-                src={`/icons/${mushroom.image}`}
-                alt={`${mushroom.name} mushroom`}
-                width={96}
-                height={106}
-                className="mx-auto"
-              />
-              {/* Warning Icon for Toxic Mushrooms */}
+              <img src={`/icons/${mushroom.image}`} alt={`${mushroom.name} mushroom`} width={96} height={106} />
               {["Death Cap", "Destroying Angel", "False Death Cap"].includes(mushroom.name) && (
-                <div className="absolute top-[-10px] right-[-5px] w-[24px] h-[24px]">
-                  <img src="/icons/icon_warning.svg" alt="Warning icon" className="w-full h-full" />
+                <div className="absolute top-[-10px] right-0 w-[20px] h-[20px]">
+                  <img src="/icons/icon_warning.svg" alt="Warning icon" className="w-full h-auto" />
                 </div>
               )}
             </div>
-            {/* Mushroom Name */}
-            <p className="mt-[10px]">{mushroom.name}</p>
+            <p className="absolute w-[97.576px] h-[22.518px] mt-[13px]">{mushroom.name}</p>
           </li>
         ))}
       </ul>
