@@ -19,11 +19,18 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-html, body{
-  height: 100%;
-  width: 100%;
+
+body, html {
+  min-width: 414px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevents unwanted scrolling */
 }
-.page{
-  height: 100%; 
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   width: 100%;
 }
