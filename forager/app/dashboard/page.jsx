@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../../components/NavBar";
 import Search from "../../components/Search";
 import PillList from "../../components/PillList";
-import MushroomList from "../../components/MushroomList";
+import MushroomList1 from "../../components/MushroomList1";
 
 export default function DashboardPage() {
   return (
@@ -18,7 +18,7 @@ export default function DashboardPage() {
       <div className="content-box">
         <Search />
         <PillList />
-        <MushroomList />
+        <MushroomList1 />
       </div>
 
       {/* Bottom Nav */}

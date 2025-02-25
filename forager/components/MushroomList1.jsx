@@ -8,7 +8,7 @@ const mushrooms = [
   { name: "Puffball", image: "Puffball.png" },
 ];
 
-export default function MushroomList() {
+export default function MushroomList1() {
   return (
     <div className="flex justify-center items-center h-screen bg-gray-200">
       <ul className="flex flex-wrap gap-5 row-gap-9 justify-start max-w-[364px] h-[380px] list-none p-0">
